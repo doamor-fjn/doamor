@@ -1,3 +1,86 @@
-page-login {
+.login-page{
 
+    background-color: transparent;
+    box-shadow: none;
+  
+}
+
+.login-area2{
+
+    box-shadow: none;
+
+}
+
+.img-logo{
+
+    background: transparent;
+    
+}
+
+.img-fundo{
+
+    position: absolute;
+    top: 30px;
+    width: 302px;
+    height: 380px;
+    background: transparent;
+
+}
+
+.link-login{
+    font-size: 12px;
+    color: white;
+}
+
+.align-center{
+
+    text-align: center;
+
+}
+
+.campos{
+
+    background-color: transparent;
+    opacity: 0.65;
+    top: -10px;
+    
+}
+
+.login-input{
+
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.botao-entrar{
+
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 80px;
+    height: 35px;
+
+}
+
+.botao-criar{
+    color: gray;
+    font-size: 20px;
+    text-decoration:none;
+    text-align: center;
+}
+
+
+.login-label{
+
+    color: black;
+    padding-left: 10px;
+    font-size: 14px;
+    
+}
+
+.contato{
+    font-size: 15px;
+    color: gray;
+    text-decoration:none; 
 }

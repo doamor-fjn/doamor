@@ -3,32 +3,74 @@
 </ion-header>
 
 <ion-content padding>
-<ion-card>
-  <ion-img [width]="imgWidth" [height]="imgHeight" src="assets/imgs/logo-doamor.png"></ion-img> 
+  
+<ion-card class="login-page">
+
+    <ion-img class="img-fundo" src="assets/imgs/fundo_login.png"></ion-img>
+
+    <ion-card-header> 
+        <ion-img class="img-logo" [width]="260" [height]="70" src="assets/imgs/logo-doamor.png"></ion-img>
+    </ion-card-header>
+
+    <ion-card-content>
+      
+        <ion-item class="campos">
+          <ion-label class="login-label" floating>E-mail</ion-label>
+          <ion-input class="login-input" type="text" [(ngModel)]="user.email"></ion-input>
+        </ion-item>
+
+        <ion-item class="campos">
+          <ion-label class="login-label" floating>Senha</ion-label>
+          <ion-input class="login-input" type="password" [(ngModel)]="user.password"></ion-input>
+        </ion-item>
+
+        <ion-row>
+          <ion-col col-4></ion-col>
+          <ion-col col-6>
+            
+            <button class="botao-entrar" ion-button (click)="login(user)">Entrar</button>
+            
+          </ion-col>
+          <ion-col col-2></ion-col>
+        </ion-row>
+        
+        <div>
+
+          <ion-item class="campos align-center">
+            <a href="#" class="link-login">Entrar Como Visitante</a>
+            <span class="link-login"> | </span>
+            <a href="#" class="link-login">Esqueceu a senha?</a>
+          </ion-item>
+          
+          <ion-item [ngStyle]="{ top: '-20px' }" class="campos align-center"> 
+              <a href="#" (click)="openRegisterinst()" class="link-login">É uma instituição? Clique aqui e se cadastre!</a>
+          </ion-item>
+
+        </div>
+
+    </ion-card-content>
+
 </ion-card>
 
-<ion-card>
+<ion-card class="login-area2">
 
-  <ion-card-header class="login">
-    <ion-icon style="zoom:8;" name="lock"></ion-icon>
-  </ion-card-header>
+  <ion-item > 
+      <button ion-button block color="secondary" (click)="openRegisterUserPage()">Entrar com Facebook</button>
+  </ion-item>
 
-  <ion-card-content>
-    
-    <ion-item>
-      <ion-label floating>E-mail</ion-label>
-      <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+  <ion-item [ngStyle]="{ top: '-15px' }"> 
+      <button ion-button block color="secondary" (click)="openRegisterUserPage()">Entrar com Google</button>
+  </ion-item>
+
+  <ion-item class="align-center" [ngStyle]="{ top: '-20px' }">
+    <a href='#' class="botao-criar" color="secondary" (click)="openRegisterUserPage()">Crie Sua Conta</a>
+    <br>
+    <ion-item class="align-center">
+      <a href="#" class="contato">Sobre</a>
+      <span class="contato"> | </span>
+      <a href="#" class="contato">Contato</a>
     </ion-item>
-
-    <ion-item>
-      <ion-label floating>Senha</ion-label>
-      <ion-input type="password" [(ngModel)]="user.password"></ion-input>
-    </ion-item>
-
-    <button ion-button block (click)="login(user)">Login</button>
-    <button ion-button block color="secondary" (click)="openRegisterUserPage()">Cadastro</button>
-  
-  </ion-card-content>
+  </ion-item>
 
 </ion-card>
 

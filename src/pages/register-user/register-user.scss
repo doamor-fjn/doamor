@@ -1,3 +1,18 @@
-page-register-user {
+.campos-registro{
+    margin-top: -5px !important;
+}
 
+.img-voltar{
+    margin-top: -10px;
+    margin-left: 120px;
+    transform: rotate(90deg);
+    background-color: transparent;
+}
+
+.img-fundo-register{
+    position: absolute;
+    top: 30px;
+    width: 302px;
+    height: 500px;
+    background: transparent;
 }

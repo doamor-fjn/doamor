@@ -1,42 +1,67 @@
 <ion-header>
-  <ion-navbar color="primary">
-    <ion-title>Registro</ion-title>
-  </ion-navbar>
+ 
 </ion-header>
 
 <ion-content padding>
 
-<ion-card>
+<ion-card class="login-page">
 
-  <ion-card-header class="login">
-    <ion-icon style="zoom:8;" name="lock"></ion-icon>
+  <ion-img class="img-fundo-register" src="assets/imgs/fundo_novo_cadastro.png"></ion-img>
+  
+  <ion-card-header> 
+    <ion-img class="img-logo" [width]="260" [height]="70" src="assets/imgs/logo-doamor.png"></ion-img>
   </ion-card-header>
-
+  
   <ion-card-content>
-    
-    <ion-item>
-      <ion-label floating>Nome</ion-label>
-      <ion-input type="text" [(ngModel)]="user.name"></ion-input>
+
+    <ion-item class="campos campos-registro">
+      <ion-label class="login-label" floating>Nome</ion-label>
+      <ion-input class="login-input" type="text" [(ngModel)]="user.name"></ion-input>
     </ion-item>
 
-    <ion-item>
-      <ion-label floating>E-mail</ion-label>
-      <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+    <ion-item class="campos campos-registro">
+      <ion-label class="login-label" floating>E-mail</ion-label>
+      <ion-input class="login-input" type="text" [(ngModel)]="user.email"></ion-input>
     </ion-item>
 
-    <ion-item>
-      <ion-label floating>Senha</ion-label>
-      <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+    <ion-item class="campos campos-registro">
+      <ion-label class="login-label" floating>Senha</ion-label>
+      <ion-input class="login-input" type="password" [(ngModel)]="user.password"></ion-input>
     </ion-item>
 
-    <ion-item>
-      <ion-label floating>Data de Nascimento</ion-label>
-      <ion-input type="date" [(ngModel)]="user.bithday"></ion-input>
+    <ion-item class="campos campos-registro">
+      <ion-label class="login-label" floating>Data de Nascimento</ion-label>
+      <ion-input class="login-input" type="date" [(ngModel)]="user.bithday"></ion-input>
     </ion-item>
 
-    <button ion-button block color="secondary" (click)="register(user)">Cadastrar</button>
+    <ion-row>
+      <ion-col col-4></ion-col>
+      <ion-col col-6>
+        
+        <button class="botao-entrar" ion-button block color="secondary" (click)="register(user)">Criar</button>
+        
+      </ion-col>
+      <ion-col col-2></ion-col>
+    </ion-row>
   
   </ion-card-content>
+
+</ion-card>
+
+<a href="#" (click)="this.navCtrl.pop()">
+  <ion-img class="img-voltar" [width]="70" [height]="70" src="assets/imgs/btn.png"></ion-img>
+</a>
+
+<ion-card class="login-area2">
+
+  <ion-item class="align-center" [ngStyle]="{ top: '-20px' }">
+    
+    <ion-item class="align-center">
+      <a href="#" class="contato">Sobre</a>
+      <span class="contato"> | </span>
+      <a href="#" class="contato">Contato</a>
+    </ion-item>
+  </ion-item>
 
 </ion-card>
 
