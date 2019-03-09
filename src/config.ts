@@ -1,8 +1,8 @@
 export const config = {
-    apiKey: "AIzaSyDRvgUlVCKrYY-nddzNs1Hm6LJ6QP0jjqU",
-    authDomain: "doamor-bf3f9.firebaseapp.com",
-    databaseURL: "https://doamor-bf3f9.firebaseio.com",
-    projectId: "doamor-bf3f9",
-    storageBucket: "doamor-bf3f9.appspot.com",
-    messagingSenderId: "590220293535"
+    apiKey: "AIzaSyAVf2Ho_4uazlzTCCiH_-phNtsWEqyPSPQ",
+    authDomain: "doamor-b263e.firebaseapp.com",
+    databaseURL: "https://doamor-b263e.firebaseio.com",
+    projectId: "doamor-b263e",
+    storageBucket: "doamor-b263e.appspot.com",
+    messagingSenderId: "343837073420"
 };

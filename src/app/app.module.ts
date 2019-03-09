@@ -3,9 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
+
 // Importações para funcionamento do Firebase e da Autenticação
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireDatabaseModule } from 'angularfire2/database'; //Database
 
 
 import { HomePage } from '../pages/home/home';
@@ -18,6 +20,9 @@ import { AuthProvider } from '../providers/auth/auth';
 
 // Importação da página de login
 import { LoginPage } from '../pages/login/login';
+
+//Importar página de registro de instituição
+import { RegisterInstPage } from '../pages/register-inst/register-inst';
 
 // Importação da página de cadastro
 import { RegisterUserPage } from '../pages/register-user/register-user';
@@ -32,6 +37,7 @@ import { config } from '../config';
     ListPage,
     LoginPage, // Registrando a página de login
     RegisterUserPage, // Registrando a página de cadastro
+    RegisterInstPage //Página de registro de instituição
   ],
   imports: [
     BrowserModule,
@@ -41,7 +47,7 @@ import { config } from '../config';
     AngularFireModule.initializeApp(config),
     // Configuração do serviço de autenticação do firebase
     AngularFireAuthModule,
-  
+    AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -50,6 +56,7 @@ import { config } from '../config';
     ListPage,
     LoginPage, // Registrando a página de login
     RegisterUserPage, // Registrando a página de cadastro
+    RegisterInstPage //Página de registro de instituição
   ],
   providers: [
     StatusBar,

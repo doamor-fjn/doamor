@@ -1,0 +1,68 @@
+<!--
+  Generated template for the RegisterInstPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+</ion-header>
+
+<ion-content padding>
+
+    <ion-card class="login-page">
+
+        <ion-img class="img-fundo-register" src="assets/imgs/fundo_novo_cadastro.png"></ion-img>
+        
+        <ion-card-header> 
+          <ion-img class="img-logo" [width]="260" [height]="70" src="assets/imgs/logo-doamor.png"></ion-img>
+        </ion-card-header>
+        
+        <ion-card-content>
+      
+          <ion-item class="campos campos-registro">
+            <ion-label class="login-label" floating>Razão Social</ion-label>
+            <ion-input class="login-input" type="text" ></ion-input>
+          </ion-item>
+      
+          <ion-item class="campos campos-registro">
+            <ion-label class="login-label" floating>E-mail</ion-label>
+            <ion-input class="login-input" type="E-mail"></ion-input>
+          </ion-item>
+      
+          <ion-item class="campos campos-registro">
+            <ion-label class="login-label" floating>Telefone</ion-label>
+            <ion-input class="login-input" type="number"></ion-input>
+          </ion-item>
+      
+          <ion-item class="campos campos-registro">
+            <ion-label class="login-label" floating>CPF/CNPJ</ion-label>
+            <ion-input class="login-input" type="text" ></ion-input>
+          </ion-item>
+          
+          <ion-item class=" campos campos-registro">
+            <button class="" ion-button block color="secondary">Enviar Solicitação</button>
+          </ion-item>
+        
+        </ion-card-content>
+      
+      </ion-card>
+      
+      <a href="#" (click)="this.navCtrl.pop()">
+        <ion-img class="img-voltar" [width]="70" [height]="70" src="assets/imgs/btn.png"></ion-img>
+      </a>
+      
+      <ion-card class="login-area2">
+      
+        <ion-item class="align-center" [ngStyle]="{ top: '-20px' }">
+          
+          <ion-item class="align-center">
+            <a href="#" class="contato">Sobre</a>
+            <span class="contato"> | </span>
+            <a href="#" class="contato">Contato</a>
+          </ion-item>
+        </ion-item>
+      
+      </ion-card>
+
+</ion-content>

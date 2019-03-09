@@ -18,6 +18,8 @@ import { HomePage } from '../home/home';
 // Importação da página que o usuário será redirecionado para cadastrar
 import { RegisterUserPage } from '../register-user/register-user';
 
+//Importação da página de cadastro da instituição
+import { RegisterInstPage } from '../register-inst/register-inst';
 
 @IonicPage()
 @Component({
@@ -26,6 +28,8 @@ import { RegisterUserPage } from '../register-user/register-user';
 })
 export class LoginPage {
 
+  instPage = RegisterInstPage;
+  
   // Definindo o nosso atributo usuário do tipo User
   public user = {} as User;
 
@@ -93,9 +97,12 @@ export class LoginPage {
     this.auth.logout();
   }
 
-
   openRegisterUserPage() {
     this.navCtrl.push(RegisterUserPage);
+  }
+
+  openRegisterInstPage() {
+    this.navCtrl.push(RegisterInstPage);
   }
 
 }
